@@ -1,0 +1,8 @@
+ROM SHA256: 3b6ecc2b38e3004423bb260eb15322a970e70da26c11b17f0d64a290983f3903
+DxeIpl PE SHA256: 5e2a302c8e6a6debc4b8973dfe3757e2b664b771d4d9f463f75f9e4c8c8300f8
+Static file offset=RVA for this PE text section; observed stop RIP=1fff0d2c.
+Inferred load base 1ffef000 aligns MOV CR0 at RVA1d2c with that stop.
+This inference is not a captured runtime instruction stream.
+RVA 1d23 0f20c0                   mov rax, cr0
+RVA 1d26 480d00000100             or rax, 0x10000
+RVA 1d2c 0f22c0                   mov cr0, rax

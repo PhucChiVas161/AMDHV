@@ -1,0 +1,73 @@
+{
+  "source": "research/VirtualMachine-25G332.s",
+  "architecture": "x86_64",
+  "scope": "Static call sites only; not runtime success or exhaustive indirect calls",
+  "startup_msrs": [
+    {
+      "call_address": "0x1000C4359",
+      "msr": "0xc0000083"
+    },
+    {
+      "call_address": "0x1000C4374",
+      "msr": "0xc0000084"
+    },
+    {
+      "call_address": "0x1000C438F",
+      "msr": "0xc0000100"
+    },
+    {
+      "call_address": "0x1000C43AA",
+      "msr": "0xc0000101"
+    },
+    {
+      "call_address": "0x1000C43C5",
+      "msr": "0xc0000102"
+    },
+    {
+      "call_address": "0x1000C43E0",
+      "msr": "0xc0000082"
+    },
+    {
+      "call_address": "0x1000C43FB",
+      "msr": "0xc0000081"
+    },
+    {
+      "call_address": "0x1000C4416",
+      "msr": "0x174"
+    },
+    {
+      "call_address": "0x1000C4431",
+      "msr": "0x176"
+    },
+    {
+      "call_address": "0x1000C444C",
+      "msr": "0x175"
+    },
+    {
+      "call_address": "0x1000C4467",
+      "msr": "0x10"
+    }
+  ],
+  "hv_call_sites": {
+    "_hv_tsc_clock": 4,
+    "_hv_vcpu_create": 1,
+    "_hv_vcpu_destroy": 1,
+    "_hv_vcpu_enable_native_msr": 11,
+    "_hv_vcpu_interrupt": 2,
+    "_hv_vcpu_invalidate_tlb": 1,
+    "_hv_vcpu_read_msr": 5,
+    "_hv_vcpu_read_register": 51,
+    "_hv_vcpu_run_until": 1,
+    "_hv_vcpu_set_tsc_relative": 3,
+    "_hv_vcpu_write_msr": 5,
+    "_hv_vcpu_write_register": 37,
+    "_hv_vm_create": 1,
+    "_hv_vm_destroy": 1,
+    "_hv_vm_map": 1,
+    "_hv_vm_protect": 1,
+    "_hv_vm_unmap": 1,
+    "_hv_vmx_read_capability": 34,
+    "_hv_vmx_vcpu_read_vmcs": 191,
+    "_hv_vmx_vcpu_write_vmcs": 84
+  }
+}

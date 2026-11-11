@@ -1,0 +1,238 @@
+Static inventory of CpuDxe privileged state instructions; linear decode, possible embedded data.
+Use runtime evidence and local flow before treating a site as reachable.
+Module SHA256 3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694
+0x1097 0fa2 cpuid
+0x10c9 0fa2 cpuid
+0x10ef 0f09 wbinvd
+0x10f1 0f20c0 mov rax, cr0
+0x10fe 0f22c0 mov cr0, rax
+0x1102 0f20c0 mov rax, cr0
+0x110f 0f22c0 mov cr0, rax
+0x1112 0f09 wbinvd
+0x1117 0f00d8 ltr ax
+0x111c dbe3 fninit
+0x1124 0f20e0 mov rax, cr4
+0x112d 0f22e0 mov cr4, rax
+0x1130 0fae151bce0000 ldmxcsr dword ptr [rip + 0xce1b]
+0x1138 0f20d8 mov rax, cr3
+0x113b 0f22d8 mov cr3, rax
+0x13d6 0f010c24 sidt [rsp]
+0x13f1 0f010424 sgdt [rsp]
+0x140a 660f00c8 str ax
+0x140f 660f00c0 sldt ax
+0x1417 440f20c0 mov rax, cr8
+0x141c 0f20e0 mov rax, cr4
+0x1425 0f22e0 mov cr4, rax
+0x1429 0f20d8 mov rax, cr3
+0x142d 0f20d0 mov rax, cr2
+0x1435 0f20c0 mov rax, cr0
+0x1444 0f21f8 mov rax, dr7
+0x1448 0f21f0 mov rax, dr6
+0x144c 0f21d8 mov rax, dr3
+0x1450 0f21d0 mov rax, dr2
+0x1454 0f21c8 mov rax, dr1
+0x1458 0f21c0 mov rax, dr0
+0x1474 0fae07 fxsave [rdi]
+0x149f 0fae0e fxrstor [rsi]
+0x14ae 0f22c0 mov cr0, rax
+0x14b6 0f22d0 mov cr2, rax
+0x14ba 0f22d8 mov cr3, rax
+0x14be 0f22e0 mov cr4, rax
+0x14c2 440f22c0 mov cr8, rax
+0x1559 0f20e0 mov rax, cr4
+0x1709 0f0114be lgdt [rsi + rdi*4]
+0x170f 2e660f011c0f lidt cs:[rdi + rcx]
+0x171b 0f22c0 mov cr0, rax
+0x173c 0f32 rdmsr
+0x1742 0f30 wrmsr
+0x1744 0f20e0 mov rax, cr4
+0x175a 0f22e0 mov cr4, rax
+0x1765 0f22d9 mov cr3, rcx
+0x176d 0f32 rdmsr
+0x1773 0f30 wrmsr
+0x1775 0f20c0 mov rax, cr0
+0x177c 0f22c0 mov cr0, rax
+0x181d 0f30 wrmsr
+0x183a 0f32 rdmsr
+0x1854 0f30 wrmsr
+0x185a 0f32 rdmsr
+0x186f 0f30 wrmsr
+0x1875 0f32 rdmsr
+0x188d 0f30 wrmsr
+0x1893 0f32 rdmsr
+0x18a5 0f30 wrmsr
+0x18ab 0f32 rdmsr
+0x18bc 0f30 wrmsr
+0x18c8 0fa2 cpuid
+0x18d6 0fa2 cpuid
+0x18e7 0fa2 cpuid
+0x272c 0fa2 cpuid
+0x2777 0f20c0 mov rax, cr0
+0x277e 0f22c0 mov cr0, rax
+0x2786 0f32 rdmsr
+0x278c 0f30 wrmsr
+0x278e 0f20e0 mov rax, cr4
+0x2795 0f22e0 mov cr4, rax
+0x279b 0f20c0 mov rax, cr0
+0x27a3 0f22c0 mov cr0, rax
+0x27c9 0fa2 cpuid
+0x27d3 0f32 rdmsr
+0x2864 0f20c0 mov rax, cr0
+0x286b 0f22c0 mov cr0, rax
+0x2873 0f32 rdmsr
+0x2878 0f30 wrmsr
+0x287a 0f20e0 mov rax, cr4
+0x287f 0f22e0 mov cr4, rax
+0x2898 0f01c8 monitor
+0x28a0 0f01c9 mwait
+0x382f 0f20c0 mov rax, cr0
+0x3833 0f20e0 mov rax, cr4
+0x383e 0f014610 sgdt [rsi + 0x10]
+0x3842 0f014e1a sidt [rsi + 0x1a]
+0x3856 0f015710 lgdt [rdi + 0x10]
+0x385a 0f015f1a lidt [rdi + 0x1a]
+0x3870 0f22e0 mov cr4, rax
+0x3874 0f22c0 mov cr0, rax
+0x389f 0f09 wbinvd
+0x38a3 0f08 invd
+0x397e 0f31 rdtsc
+0x399d 0f31 rdtsc
+0x39b2 0f31 rdtsc
+0x3af6 0f32 rdmsr
+0x3b59 0f32 rdmsr
+0x3c86 0f32 rdmsr
+0x3e3c 0f32 rdmsr
+0x3e7e 0f32 rdmsr
+0x41c3 0f32 rdmsr
+0x41e1 0f30 wrmsr
+0x4275 0f30 wrmsr
+0x4284 0f30 wrmsr
+0x42ae 0f32 rdmsr
+0x42b5 0f30 wrmsr
+0x451a 0f32 rdmsr
+0x4528 0f30 wrmsr
+0x463e 0f01c8 monitor
+0x4658 0f01c9 mwait
+0x4833 0f31 rdtsc
+0x4a33 0f31 rdtsc
+0x4ca2 0f32 rdmsr
+0x4ca9 0f30 wrmsr
+0x4cd9 0f32 rdmsr
+0x4ce0 0f30 wrmsr
+0x4e25 0f20d9 mov rcx, cr3
+0x4e7b 0f20c1 mov rcx, cr0
+0x4e7e 0f20e0 mov rax, cr4
+0x4e89 410f20d8 mov r8, cr3
+0x4f1f 0f32 rdmsr
+0x5158 0f20c0 mov rax, cr0
+0x516a 0f20c0 mov rax, cr0
+0x5173 0f22c0 mov cr0, rax
+0x52fa 0f20c2 mov rdx, cr0
+0x5307 410f22c0 mov cr0, r8
+0x532f 0f22c2 mov cr0, rdx
+0x5340 0f20c0 mov rax, cr0
+0x534d 0f22c2 mov cr0, rdx
+0x5354 0f22c0 mov cr0, rax
+0x5384 0f20c2 mov rdx, cr0
+0x5391 410f22c0 mov cr0, r8
+0x53bd 0f22c2 mov cr0, rdx
+0x53ce 0f20c0 mov rax, cr0
+0x53db 0f22c2 mov cr0, rdx
+0x53e2 0f22c0 mov cr0, rax
+0x5401 0f20c1 mov rcx, cr0
+0x540e 410f22c1 mov cr0, r9
+0x5416 0f22c1 mov cr0, rcx
+0x548e 0f20c0 mov rax, cr0
+0x5497 0f22c0 mov cr0, rax
+0x6a0c 0f31 rdtsc
+0x6a31 0f31 rdtsc
+0x6a7d 0f32 rdmsr
+0x6abf 0f32 rdmsr
+0x6b10 0f32 rdmsr
+0x6b59 0f30 wrmsr
+0x6bca 0f30 wrmsr
+0x6c25 0f32 rdmsr
+0x6c2c 0f30 wrmsr
+0x7142 0f32 rdmsr
+0x717b 0f20e0 mov rax, cr4
+0x7187 0f22e0 mov cr4, rax
+0x7194 0f32 rdmsr
+0x719b 0f30 wrmsr
+0x71bd 0f22e6 mov cr4, rsi
+0x71eb 0f32 rdmsr
+0x7201 0f32 rdmsr
+0x863f 0f32 rdmsr
+0x8663 0f32 rdmsr
+0x8676 0f32 rdmsr
+0x86cf 0f30 wrmsr
+0x86e7 0f32 rdmsr
+0x870e 0f30 wrmsr
+0x8723 0f30 wrmsr
+0x8741 0f30 wrmsr
+0x883b 0f31 rdtsc
+0x885f 0f31 rdtsc
+0x8963 0f20c0 mov rax, cr0
+0x896c 0f22c0 mov cr0, rax
+0x8982 0f20c0 mov rax, cr0
+0x898b 0f22c0 mov cr0, rax
+0x8993 0f32 rdmsr
+0x89a1 0f30 wrmsr
+0x8a1a 0f019520f9ffff lgdt [rbp - 0x6e0]
+0x8afb 0f018d28fdffff sidt [rbp - 0x2d8]
+0x8b8f 410f20c7 mov r15, cr0
+0x8b9c 0f22c0 mov cr0, rax
+0x8bfc 410f22c7 mov cr0, r15
+0x8d77 0f019d28fdffff lidt [rbp - 0x2d8]
+0x8ddf 0f32 rdmsr
+0x8ec1 0f32 rdmsr
+0x8edb 0f32 rdmsr
+0x8f8e 0f32 rdmsr
+0x911d 0f32 rdmsr
+0x920f 0f20c1 mov rcx, cr0
+0x9212 0f20e0 mov rax, cr4
+0x927b 0f32 rdmsr
+0xafe2 0f0145ee sgdt [rbp - 0x12]
+0xb095 0f0145ee sgdt [rbp - 0x12]
+0xb1da 0f20c0 mov rax, cr0
+0xb1e0 0f20d8 mov rax, cr3
+0xb1e7 0f20e0 mov rax, cr4
+0xb20a 0f21c0 mov rax, dr0
+0xb211 0f21c8 mov rax, dr1
+0xb218 0f21d0 mov rax, dr2
+0xb21f 0f21d8 mov rax, dr3
+0xb226 0f21f0 mov rax, dr6
+0xb22d 0f21f8 mov rax, dr7
+0xb234 0f014648 sgdt [rsi + 0x48]
+0xb238 0f014e52 sidt [rsi + 0x52]
+0xb23c 660f00c8 str ax
+0xb264 0f22d8 mov cr3, rax
+0xb26b 0f22e0 mov cr4, rax
+0xb271 0f22c0 mov cr0, rax
+0xb29c 0f23c0 mov dr0, rax
+0xb2a3 0f23c8 mov dr1, rax
+0xb2aa 0f23d0 mov dr2, rax
+0xb2b1 0f23d8 mov dr3, rax
+0xb2b8 0f23f0 mov dr6, rax
+0xb2bf 0f23f8 mov dr7, rax
+0xb2c2 0f015648 lgdt [rsi + 0x48]
+0xb2c6 0f015e52 lidt [rsi + 0x52]
+0xb57f 0f32 rdmsr
+0xb5d4 0f20d8 mov rax, cr3
+0xb606 0f20c0 mov rax, cr0
+0xb66f 0f32 rdmsr
+0xb68e 0f20e0 mov rax, cr4
+0xb6b8 410f014520 sgdt [r13 + 0x20]
+0xb6bd 410f014d2a sidt [r13 + 0x2a]
+0xba2c 0f31 rdtsc
+0xbc7e 0f31 rdtsc
+0xc0f9 0f01c8 monitor
+0xc112 0f01c9 mwait
+0xc146 0f32 rdmsr
+0xc166 0f32 rdmsr
+0xc1dd 0f32 rdmsr
+0xcbd5 0f30 wrmsr
+0xcbf7 0f32 rdmsr
+0xcc4b 0f32 rdmsr
+0xccfb 0f30 wrmsr
+0xcd06 0f30 wrmsr
+0xcd28 0f32 rdmsr

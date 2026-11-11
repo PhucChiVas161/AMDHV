@@ -1,0 +1,71 @@
+ResetSystemRuntimeDxe static decode. Inferred base1fbaf000 from four runtime OUT RIPs.
+Not runtime memory capture; establishes shutdown mechanism, not its caller or reason.
+0x1244 4d89fc mov r12, r15
+0x1247 4d8b2424 mov r12, qword ptr [r12]
+0x124b 4d39fc cmp r12, r15
+0x124e 7417 je 0x1267
+0x1250 4d8b5c2410 mov r11, qword ptr [r12 + 0x10]
+0x1255 89f1 mov ecx, esi
+0x1257 4c89f2 mov rdx, r14
+0x125a 4989d8 mov r8, rbx
+0x125d 4989f9 mov r9, rdi
+0x1260 e8bb030000 call 0x1620
+0x1265 ebe0 jmp 0x1247
+0x1267 4c8d3dfa0d0000 lea r15, [rip + 0xdfa]
+0x126e 4d89fc mov r12, r15
+0x1271 4d8b2424 mov r12, qword ptr [r12]
+0x1275 4d39fc cmp r12, r15
+0x1278 0f8417ffffff je 0x1195
+0x127e 4d8b5c2410 mov r11, qword ptr [r12 + 0x10]
+0x1283 89f1 mov ecx, esi
+0x1285 4c89f2 mov rdx, r14
+0x1288 4989d8 mov r8, rbx
+0x128b 4989f9 mov r9, rdi
+0x128e e88d030000 call 0x1620
+0x1293 ebdc jmp 0x1271
+0x1295 b006 mov al, 6
+0x1297 66baf90c mov dx, 0xcf9
+0x129b ee out dx, al
+0x129c 48b8aaaaaaaaaaaaaaaa movabs rax, 0xaaaaaaaaaaaaaaaa
+0x12a6 488945c8 mov qword ptr [rbp - 0x38], rax
+0x12aa 48c745c800000000 mov qword ptr [rbp - 0x38], 0
+0x12b2 488b45c8 mov rax, qword ptr [rbp - 0x38]
+0x12b6 4885c0 test rax, rax
+0x12b9 74f7 je 0x12b2
+0x12bb eb3a jmp 0x12f7
+0x12bd 66ba0406 mov dx, 0x604
+0x12c1 66ed in ax, dx
+0x12c3 25ffc3ffff and eax, 0xffffc3ff
+0x12c8 0d001c0000 or eax, 0x1c00
+0x12cd 66ef out dx, ax
+0x12cf 66ed in ax, dx
+0x12d1 0d00200000 or eax, 0x2000
+0x12d6 66ef out dx, ax
+0x12d8 48b8aaaaaaaaaaaaaaaa movabs rax, 0xaaaaaaaaaaaaaaaa
+0x12e2 488945c8 mov qword ptr [rbp - 0x38], rax
+0x12e6 48c745c800000000 mov qword ptr [rbp - 0x38], 0
+0x12ee 488b45c8 mov rax, qword ptr [rbp - 0x38]
+0x12f2 4885c0 test rax, rax
+0x12f5 74f7 je 0x12ee
+0x12f7 4883c430 add rsp, 0x30
+0x12fb 5b pop rbx
+0x12fc 5f pop rdi
+0x12fd 5e pop rsi
+0x12fe 415c pop r12
+0x1300 415e pop r14
+0x1302 415f pop r15
+0x1304 5d pop rbp
+0x1305 c3 ret 
+0x1306 55 push rbp
+0x1307 4889e5 mov rbp, rsp
+0x130a c605070e000001 mov byte ptr [rip + 0xe07], 1
+0x1311 5d pop rbp
+0x1312 c3 ret 
+0x1313 55 push rbp
+0x1314 4889e5 mov rbp, rsp
+0x1317 488b05220e0000 mov rax, qword ptr [rip + 0xe22]
+0x131e 4c8b5840 mov r11, qword ptr [rax + 0x40]
+0x1322 488d15f70d0000 lea rdx, [rip + 0xdf7]
+0x1329 31c9 xor ecx, ecx
+0x132b 5d pop rbp
+0x132c e9ef020000 jmp 0x1620

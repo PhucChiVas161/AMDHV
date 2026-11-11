@@ -1,0 +1,2631 @@
+{
+  "scope": "ELF64 executable PT_LOAD linear decode only; ASLR/process identity and instruction reachability are not proved.",
+  "modules": [
+    {
+      "name": "busybox",
+      "sha256": "6dcd5f0190e8f4b055c2823b3d97660704b97d70c60cd3d3cf9805922fde1302",
+      "counts": {},
+      "sites": []
+    },
+    {
+      "name": "ld-musl.so.1",
+      "sha256": "6600020aec4ea506e4310a4f48ce8a998e85885d90863bade0e7344dcb067552",
+      "counts": {
+        "syscall": 503
+      },
+      "sites": [
+        {
+          "va": "0x1988a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x26eaa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x26f02",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x29c51",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x29d4d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x29d72",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x31201",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3120b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3126b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3132b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34813",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34891",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x348a0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3494c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34b11",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34b25",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34b6f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x34b7f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x37b0a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3a404",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b0d1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b212",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b22e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b248",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b252",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b261",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b26b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b29b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b2b8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b2cb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b2de",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b303",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b322",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b336",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b35d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b37e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b391",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b39e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3b3f5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cae0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cb12",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cbc3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cbd7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cbe6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cbf5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cc79",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x3cd87",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41020",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41061",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41367",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41951",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4195b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x419a5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x419be",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x419d8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41c56",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41c83",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41cca",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41cee",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41d09",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41d15",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41d28",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41d43",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41dce",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41e53",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x41e6b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x42316",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x42334",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x423ca",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x42414",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4243d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4245b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x42475",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4248e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x424a6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x424d2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43022",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4304f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43067",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4307f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4309e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x430b5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4324e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43267",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4327f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x432c3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43361",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43373",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x433de",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x433fa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4341a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43438",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4345f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x434b4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x434c7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x434eb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43509",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43524",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4353f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4355d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43592",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4366a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x436cf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x436dd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x436fb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43718",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43732",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4374d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43767",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43782",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x437a3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x437c1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x437d9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x437f1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4383f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x438df",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x438f9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4390e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43964",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43a13",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43a2a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43a4a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43a6b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43a84",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43aa1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43ab6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43ad0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43afb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43b21",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43b30",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43b71",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43b8f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43bff",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43c0b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43c32",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43c4c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43c73",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43c97",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43db4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43dcc",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43dea",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e05",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e1d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e3a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e53",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e74",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43e8f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43eaa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43ed2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43eec",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f1a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f31",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f43",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f58",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f67",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f76",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43f88",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43fa1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43fbf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43fe0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x43ff8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x44010",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x4402b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x555dd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55601",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55619",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55646",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55678",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x556b0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x557e6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55de5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55e28",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55e48",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55e6a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55e8a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x55f35",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56462",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x564cd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x564e5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x564fd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56518",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56561",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56614",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5664e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x566f0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56708",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56733",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56753",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x567f7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56851",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x568f5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56a2d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56a5b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56aad",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56afc",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x56b78",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5746e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x574a6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x574c6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x58663",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x58a1d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x58a44",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x58b0a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x58c98",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x590bb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x597d1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a23a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a263",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a2bb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a2ea",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a30f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a328",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a36e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a3c3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a3f3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a3fc",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a41e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5a427",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5b240",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5b2d8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5b316",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5b508",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5bdc4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d36f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d387",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d398",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d3cf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d409",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d424",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d4bb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d50b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5d54d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dc55",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dc6f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dc87",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dc96",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dcb4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dde0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5de0d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5deac",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5df41",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5df96",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5dfad",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e09e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e2c7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e357",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e4d6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e585",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e607",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e629",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e63d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e659",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e69b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e6d4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e72f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e7a1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e7b5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e83a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e852",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e86b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e897",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e8bf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e8ec",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5e987",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ea57",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ea74",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eaa5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eac5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eb02",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eb2c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eb65",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ec2f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ecdb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ed27",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5edbc",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5edd3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ede4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ee06",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5eec9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5ef0e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5efac",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5efc1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f08e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f0af",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f188",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f198",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f1ce",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f1df",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f265",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f352",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f396",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f49c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5f503",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5faf5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x5fb23",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6049c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x604c9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x60503",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x608fe",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x60930",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x60dd8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x60df1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x61570",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6159e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6165b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x61692",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62023",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62294",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x622c6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x623b7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x623ee",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62569",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62584",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62593",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62aa3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62b15",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62b2e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62b5a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x62bb2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6508d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x650e9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6519a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x651a7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x651d5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x651e5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x653d3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x653e2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65813",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6584e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65860",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65867",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x658c0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x658cb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65925",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6593a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x659a0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65a15",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65a2c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65a72",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65a7f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65aaf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65aeb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65aff",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65b0e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65b1a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65b48",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65b5c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65be8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65d08",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65e7b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65e93",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65ed5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65ee0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65f61",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x65f79",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66128",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6613c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66204",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66214",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x662af",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x662ba",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66322",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66336",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x663ee",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6642f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6644d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6645d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6658a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6659a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x665e6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x665f6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x666d3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x666e9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6672e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6673b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6684f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6685f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x668f5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66907",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66939",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66952",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6698d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66999",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x669c4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66c4e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66c5f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x66ed5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6703c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x670e4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67210",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x672cd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67435",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x674a8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67501",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67561",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x675bf",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67609",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67619",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67687",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67697",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x678d2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x678e2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67bb7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67c21",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67c87",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67da0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67db0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x67fed",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6808d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x681f7",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x682ab",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x682bb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x682cb",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x682d3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x682dd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x68302",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x68314",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6833f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6835f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x683b1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x683d0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x688d3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x688fd",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x68988",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x689a4",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x68a47",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69691",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x697e2",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x698b6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69914",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x699df",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69a09",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69a1c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69a4a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69a7e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69aa3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69b35",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69b4d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69baa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69bc6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69c37",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69c58",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69c90",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69cb0",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69cfa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d06",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d17",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d28",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d3d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d56",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d60",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69d71",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69da6",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69dd3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69e73",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69e8b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69ea5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69eba",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69f2a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69f3e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69f57",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69f8b",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69f9f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69fbe",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x69fef",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a05e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a091",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a0f8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a100",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a108",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a117",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a183",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a199",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a1a1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a1a9",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a1b8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a1cc",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a1e5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a204",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a21c",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a240",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a25a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a2ee",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a314",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a34e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a357",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a3a3",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a3ac",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a4c5",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a4fa",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a566",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a57e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a5d8",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a639",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a677",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a69d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a6ac",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a73f",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a75a",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a76e",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a7c1",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a8ff",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        },
+        {
+          "va": "0x6a91d",
+          "instruction": "syscall ",
+          "bytes": "0f05"
+        }
+      ]
+    },
+    {
+      "name": "libcrypto.so.3",
+      "sha256": "ed70ca12df331dacdef730bea0e40ba3eae4246957c59f259097535c82002c7e",
+      "counts": {
+        "rdtsc": 6,
+        "cpuid": 10,
+        "xgetbv": 1
+      },
+      "sites": [
+        {
+          "va": "0x182e74",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        },
+        {
+          "va": "0x182e8d",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182ee9",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182efa",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182f14",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182f22",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182f5b",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182f70",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x182ffa",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x18303f",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x183062",
+          "instruction": "cpuid ",
+          "bytes": "0fa2"
+        },
+        {
+          "va": "0x183070",
+          "instruction": "xgetbv ",
+          "bytes": "0f01d0"
+        },
+        {
+          "va": "0x18320d",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        },
+        {
+          "va": "0x183230",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        },
+        {
+          "va": "0x183272",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        },
+        {
+          "va": "0x183285",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        },
+        {
+          "va": "0x1832a0",
+          "instruction": "rdtsc ",
+          "bytes": "0f31"
+        }
+      ]
+    }
+  ]
+}

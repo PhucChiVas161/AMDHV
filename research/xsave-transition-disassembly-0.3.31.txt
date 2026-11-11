@@ -1,0 +1,180 @@
+
+build/obj/svm_vmrun.o:	file format mach-o 64-bit x86-64
+
+Disassembly of section __TEXT,__text:
+
+0000000000000000 <_amdhv_svm_vmrun>:
+       0: 55                           	pushq	%rbp
+       1: 53                           	pushq	%rbx
+       2: 41 54                        	pushq	%r12
+       4: 41 55                        	pushq	%r13
+       6: 41 56                        	pushq	%r14
+       8: 41 57                        	pushq	%r15
+       a: 56                           	pushq	%rsi
+       b: 0f 01 dd                     	clgi
+       e: 48 89 f8                     	movq	%rdi, %rax
+      11: 48 8b 1e                     	movq	(%rsi), %rbx
+      14: 48 8b 4e 08                  	movq	0x8(%rsi), %rcx
+      18: 48 8b 56 10                  	movq	0x10(%rsi), %rdx
+      1c: 48 8b 7e 20                  	movq	0x20(%rsi), %rdi
+      20: 48 8b 6e 28                  	movq	0x28(%rsi), %rbp
+      24: 4c 8b 46 30                  	movq	0x30(%rsi), %r8
+      28: 4c 8b 4e 38                  	movq	0x38(%rsi), %r9
+      2c: 4c 8b 56 40                  	movq	0x40(%rsi), %r10
+      30: 4c 8b 5e 48                  	movq	0x48(%rsi), %r11
+      34: 4c 8b 66 50                  	movq	0x50(%rsi), %r12
+      38: 4c 8b 6e 58                  	movq	0x58(%rsi), %r13
+      3c: 4c 8b 76 60                  	movq	0x60(%rsi), %r14
+      40: 4c 8b 7e 68                  	movq	0x68(%rsi), %r15
+      44: 48 8b 76 18                  	movq	0x18(%rsi), %rsi
+      48: 0f 01 d8                     	vmrun
+      4b: 48 8b 04 24                  	movq	(%rsp), %rax
+      4f: 48 89 18                     	movq	%rbx, (%rax)
+      52: 48 89 48 08                  	movq	%rcx, 0x8(%rax)
+      56: 48 89 50 10                  	movq	%rdx, 0x10(%rax)
+      5a: 48 89 70 18                  	movq	%rsi, 0x18(%rax)
+      5e: 48 89 78 20                  	movq	%rdi, 0x20(%rax)
+      62: 48 89 68 28                  	movq	%rbp, 0x28(%rax)
+      66: 4c 89 40 30                  	movq	%r8, 0x30(%rax)
+      6a: 4c 89 48 38                  	movq	%r9, 0x38(%rax)
+      6e: 4c 89 50 40                  	movq	%r10, 0x40(%rax)
+      72: 4c 89 58 48                  	movq	%r11, 0x48(%rax)
+      76: 4c 89 60 50                  	movq	%r12, 0x50(%rax)
+      7a: 4c 89 68 58                  	movq	%r13, 0x58(%rax)
+      7e: 4c 89 70 60                  	movq	%r14, 0x60(%rax)
+      82: 4c 89 78 68                  	movq	%r15, 0x68(%rax)
+      86: 0f 01 dc                     	stgi
+      89: 5e                           	popq	%rsi
+      8a: 41 5f                        	popq	%r15
+      8c: 41 5e                        	popq	%r14
+      8e: 41 5d                        	popq	%r13
+      90: 41 5c                        	popq	%r12
+      92: 5b                           	popq	%rbx
+      93: 5d                           	popq	%rbp
+      94: c3                           	retq
+      95: 66 2e 0f 1f 84 00 00 00 00 00	nopw	%cs:(%rax,%rax)
+      9f: 90                           	nop
+
+00000000000000a0 <_amdhv_svm_vmrun_full>:
+      a0: 55                           	pushq	%rbp
+      a1: 53                           	pushq	%rbx
+      a2: 41 54                        	pushq	%r12
+      a4: 41 55                        	pushq	%r13
+      a6: 41 56                        	pushq	%r14
+      a8: 41 57                        	pushq	%r15
+      aa: 52                           	pushq	%rdx
+      ab: 57                           	pushq	%rdi
+      ac: 56                           	pushq	%rsi
+      ad: 51                           	pushq	%rcx
+      ae: 41 50                        	pushq	%r8
+      b0: 0f 20 c0                     	movq	%cr0, %rax
+      b3: 50                           	pushq	%rax
+      b4: 41 51                        	pushq	%r9
+      b6: 31 c0                        	xorl	%eax, %eax
+      b8: 4d 85 c9                     	testq	%r9, %r9
+      bb: 74 03                        	je	0xc0 <_amdhv_svm_vmrun_full+0x20>
+      bd: 0f 21 c0                     	movq	%dr0, %rax
+      c0: 50                           	pushq	%rax
+      c1: 0f 01 dd                     	clgi
+      c4: 48 83 7c 24 78 00            	cmpq	$0x0, 0x78(%rsp)
+      ca: 74 02                        	je	0xce <_amdhv_svm_vmrun_full+0x2e>
+      cc: fb                           	sti
+      cd: 90                           	nop
+      ce: 4d 85 c9                     	testq	%r9, %r9
+      d1: 74 04                        	je	0xd7 <_amdhv_svm_vmrun_full+0x37>
+      d3: 41 0f 23 c1                  	movq	%r9, %dr0
+      d7: 0f 06                        	clts
+      d9: 49 83 b8 f8 0f 00 00 00      	cmpq	$0x0, 0xff8(%r8)
+      e1: 74 24                        	je	0x107 <_amdhv_svm_vmrun_full+0x67>
+      e3: b8 07 00 00 00               	movl	$0x7, %eax
+      e8: 31 d2                        	xorl	%edx, %edx
+      ea: 49 0f ae 20                  	xsave64	(%r8)
+      ee: b8 07 00 00 00               	movl	$0x7, %eax
+      f3: 48 0f ae 29                  	xrstor64	(%rcx)
+      f7: 41 8b 80 f8 0f 00 00         	movl	0xff8(%r8), %eax
+      fe: 31 d2                        	xorl	%edx, %edx
+     100: 31 c9                        	xorl	%ecx, %ecx
+     102: 0f 01 d1                     	xsetbv
+     105: eb 0f                        	jmp	0x116 <_amdhv_svm_vmrun_full+0x76>
+     107: b8 03 00 00 00               	movl	$0x3, %eax
+     10c: 31 d2                        	xorl	%edx, %edx
+     10e: 49 0f ae 20                  	xsave64	(%r8)
+     112: 48 0f ae 09                  	fxrstor64	(%rcx)
+     116: 48 8b 44 24 38               	movq	0x38(%rsp), %rax
+     11b: 0f 01 db                     	vmsave
+     11e: 48 8b 44 24 30               	movq	0x30(%rsp), %rax
+     123: 0f 01 da                     	vmload
+     126: 48 8b 1e                     	movq	(%rsi), %rbx
+     129: 48 8b 4e 08                  	movq	0x8(%rsi), %rcx
+     12d: 48 8b 56 10                  	movq	0x10(%rsi), %rdx
+     131: 48 8b 7e 20                  	movq	0x20(%rsi), %rdi
+     135: 48 8b 6e 28                  	movq	0x28(%rsi), %rbp
+     139: 4c 8b 46 30                  	movq	0x30(%rsi), %r8
+     13d: 4c 8b 4e 38                  	movq	0x38(%rsi), %r9
+     141: 4c 8b 56 40                  	movq	0x40(%rsi), %r10
+     145: 4c 8b 5e 48                  	movq	0x48(%rsi), %r11
+     149: 4c 8b 66 50                  	movq	0x50(%rsi), %r12
+     14d: 4c 8b 6e 58                  	movq	0x58(%rsi), %r13
+     151: 4c 8b 76 60                  	movq	0x60(%rsi), %r14
+     155: 4c 8b 7e 68                  	movq	0x68(%rsi), %r15
+     159: 48 8b 76 18                  	movq	0x18(%rsi), %rsi
+     15d: 0f 01 d8                     	vmrun
+     160: fa                           	cli
+     161: 48 8b 44 24 28               	movq	0x28(%rsp), %rax
+     166: 48 89 18                     	movq	%rbx, (%rax)
+     169: 48 89 48 08                  	movq	%rcx, 0x8(%rax)
+     16d: 48 89 50 10                  	movq	%rdx, 0x10(%rax)
+     171: 48 89 70 18                  	movq	%rsi, 0x18(%rax)
+     175: 48 89 78 20                  	movq	%rdi, 0x20(%rax)
+     179: 48 89 68 28                  	movq	%rbp, 0x28(%rax)
+     17d: 4c 89 40 30                  	movq	%r8, 0x30(%rax)
+     181: 4c 89 48 38                  	movq	%r9, 0x38(%rax)
+     185: 4c 89 50 40                  	movq	%r10, 0x40(%rax)
+     189: 4c 89 58 48                  	movq	%r11, 0x48(%rax)
+     18d: 4c 89 60 50                  	movq	%r12, 0x50(%rax)
+     191: 4c 89 68 58                  	movq	%r13, 0x58(%rax)
+     195: 4c 89 70 60                  	movq	%r14, 0x60(%rax)
+     199: 4c 89 78 68                  	movq	%r15, 0x68(%rax)
+     19d: 48 8b 44 24 30               	movq	0x30(%rsp), %rax
+     1a2: 0f 01 db                     	vmsave
+     1a5: 48 8b 44 24 38               	movq	0x38(%rsp), %rax
+     1aa: 0f 01 da                     	vmload
+     1ad: 48 8b 4c 24 20               	movq	0x20(%rsp), %rcx
+     1b2: 4c 8b 44 24 18               	movq	0x18(%rsp), %r8
+     1b7: 49 83 b8 f8 0f 00 00 00      	cmpq	$0x0, 0xff8(%r8)
+     1bf: 74 25                        	je	0x1e6 <_amdhv_svm_vmrun_full+0x146>
+     1c1: 49 89 ca                     	movq	%rcx, %r10
+     1c4: b8 07 00 00 00               	movl	$0x7, %eax
+     1c9: 31 d2                        	xorl	%edx, %edx
+     1cb: 31 c9                        	xorl	%ecx, %ecx
+     1cd: 0f 01 d1                     	xsetbv
+     1d0: b8 07 00 00 00               	movl	$0x7, %eax
+     1d5: 31 d2                        	xorl	%edx, %edx
+     1d7: 49 0f ae 22                  	xsave64	(%r10)
+     1db: b8 07 00 00 00               	movl	$0x7, %eax
+     1e0: 49 0f ae 28                  	xrstor64	(%r8)
+     1e4: eb 0f                        	jmp	0x1f5 <_amdhv_svm_vmrun_full+0x155>
+     1e6: 48 0f ae 01                  	fxsave64	(%rcx)
+     1ea: b8 03 00 00 00               	movl	$0x3, %eax
+     1ef: 31 d2                        	xorl	%edx, %edx
+     1f1: 49 0f ae 28                  	xrstor64	(%r8)
+     1f5: 41 5a                        	popq	%r10
+     1f7: 41 59                        	popq	%r9
+     1f9: 4d 85 c9                     	testq	%r9, %r9
+     1fc: 74 04                        	je	0x202 <_amdhv_svm_vmrun_full+0x162>
+     1fe: 41 0f 23 c2                  	movq	%r10, %dr0
+     202: 58                           	popq	%rax
+     203: 0f 22 c0                     	movq	%rax, %cr0
+     206: 0f 01 dc                     	stgi
+     209: 41 58                        	popq	%r8
+     20b: 59                           	popq	%rcx
+     20c: 5e                           	popq	%rsi
+     20d: 5f                           	popq	%rdi
+     20e: 5a                           	popq	%rdx
+     20f: 41 5f                        	popq	%r15
+     211: 41 5e                        	popq	%r14
+     213: 41 5d                        	popq	%r13
+     215: 41 5c                        	popq	%r12
+     217: 5b                           	popq	%rbx
+     218: 5d                           	popq	%rbp
+     219: c3                           	retq

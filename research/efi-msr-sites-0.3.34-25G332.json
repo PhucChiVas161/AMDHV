@@ -1,0 +1,915 @@
+{
+  "scope": "Reuses unchanged-hash 70-PE executable linear inventory. No ECX value/reachability proof. TE/raw excluded.",
+  "sites": [
+    {
+      "module": "volume-0/file-5f3adf54-79ef-40ff-872f-5be2acf4f4ef/section1.pe",
+      "sha256": "f07449bc0653b7ee6b84a844aaeea20f5b9ffee53c668120ec5756524793f713",
+      "rva": "0x2a59",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-5f3adf54-79ef-40ff-872f-5be2acf4f4ef/section1.pe",
+      "sha256": "f07449bc0653b7ee6b84a844aaeea20f5b9ffee53c668120ec5756524793f713",
+      "rva": "0x2a9b",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-5f3adf54-79ef-40ff-872f-5be2acf4f4ef/section1.pe",
+      "sha256": "f07449bc0653b7ee6b84a844aaeea20f5b9ffee53c668120ec5756524793f713",
+      "rva": "0x2aec",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-5f3adf54-79ef-40ff-872f-5be2acf4f4ef/section1.pe",
+      "sha256": "f07449bc0653b7ee6b84a844aaeea20f5b9ffee53c668120ec5756524793f713",
+      "rva": "0x2b35",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-86d70125-baa3-4296-a62f-602bebbb9081/section1.pe",
+      "sha256": "5e2a302c8e6a6debc4b8973dfe3757e2b664b771d4d9f463f75f9e4c8c8300f8",
+      "rva": "0x1d98",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-86d70125-baa3-4296-a62f-602bebbb9081/section1.pe",
+      "sha256": "5e2a302c8e6a6debc4b8973dfe3757e2b664b771d4d9f463f75f9e4c8c8300f8",
+      "rva": "0x1d9f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-d6a2cb7f-6a18-4e2f-b43b-9920a733700a/section0/section0.pe",
+      "sha256": "de49a285b6f79968f854c1aac1774ad6352d59a55449dd6aa23ecc1566c6ac40",
+      "rva": "0x12930",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-d6a2cb7f-6a18-4e2f-b43b-9920a733700a/section0/section0.pe",
+      "sha256": "de49a285b6f79968f854c1aac1774ad6352d59a55449dd6aa23ecc1566c6ac40",
+      "rva": "0x12999",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-d6a2cb7f-6a18-4e2f-b43b-9920a733700a/section0/section0.pe",
+      "sha256": "de49a285b6f79968f854c1aac1774ad6352d59a55449dd6aa23ecc1566c6ac40",
+      "rva": "0x129b4",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x173c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x1742",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x176d",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x1773",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x181d",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x183a",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x1854",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x185a",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x186f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x1875",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x188d",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x1893",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x18a5",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x18ab",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x18bc",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x2786",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x278c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x27d3",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x2873",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x2878",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x3af6",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x3b59",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x3c86",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x3e3c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x3e7e",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x41c3",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x41e1",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4275",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4284",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x42ae",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x42b5",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x451a",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4528",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4ca2",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4ca9",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4cd9",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4ce0",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x4f1f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6a7d",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6abf",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6b10",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6b59",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6bca",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6c25",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x6c2c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x7142",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x7194",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x719b",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x71eb",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x7201",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x863f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8663",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8676",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x86cf",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x86e7",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x870e",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8723",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8741",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8993",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x89a1",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8ddf",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8ec1",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8edb",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x8f8e",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x911d",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0x927b",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xb57f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xb66f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xc146",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xc166",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xc1dd",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xcbd5",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xcbf7",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xcc4b",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xccfb",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xcd06",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-1a1e4886-9517-440e-9fde-3be44cee2136/section1.pe",
+      "sha256": "3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694",
+      "rva": "0xcd28",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-6ce6b0de-781c-4f6c-b42d-98346c614bec/section1.pe",
+      "sha256": "713d7715b309642d51bfced50712fd0ab0e82edc8f2814532b50dfc2773c50df",
+      "rva": "0x142a",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f30",
+      "instruction": "wrmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-6ce6b0de-781c-4f6c-b42d-98346c614bec/section1.pe",
+      "sha256": "713d7715b309642d51bfced50712fd0ab0e82edc8f2814532b50dfc2773c50df",
+      "rva": "0x161f",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-6ce6b0de-781c-4f6c-b42d-98346c614bec/section1.pe",
+      "sha256": "713d7715b309642d51bfced50712fd0ab0e82edc8f2814532b50dfc2773c50df",
+      "rva": "0x167c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-6ce6b0de-781c-4f6c-b42d-98346c614bec/section1.pe",
+      "sha256": "713d7715b309642d51bfced50712fd0ab0e82edc8f2814532b50dfc2773c50df",
+      "rva": "0x16b5",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    },
+    {
+      "module": "volume-0/file-e7ab0b84-4a5b-42d5-b1aa-b994725afaff/section1/section1/volume-ee4e5898-3914-4259-9d6e-dc7bd79403cf/file-a19b1fe7-c1bc-49f8-875f-54a5d542443f/section1.pe",
+      "sha256": "1bc6b7432f382b0c2c159c7b2754acbeeb8a4970c0455e8bc94ff644cab80365",
+      "rva": "0x103c",
+      "section": ".text",
+      "bits": 64,
+      "category": "msr-clock-cpuid-xcr",
+      "bytes": "0f32",
+      "instruction": "rdmsr"
+    }
+  ]
+}

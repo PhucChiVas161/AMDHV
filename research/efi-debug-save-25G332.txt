@@ -1,0 +1,23 @@
+PE GUID 1a1e4886-9517-440e-9fde-3be44cee2136 SHA256 3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694
+Static inference, not runtime memory capture: observed RIP1fa6320a matches RVAb20a at inferred base1fa58000.
+0xb20a 0f21c0 mov rax, dr0
+0xb20d 48894618 mov qword ptr [rsi + 0x18], rax
+0xb211 0f21c8 mov rax, dr1
+0xb214 48894620 mov qword ptr [rsi + 0x20], rax
+0xb218 0f21d0 mov rax, dr2
+0xb21b 48894628 mov qword ptr [rsi + 0x28], rax
+0xb21f 0f21d8 mov rax, dr3
+0xb222 48894630 mov qword ptr [rsi + 0x30], rax
+0xb226 0f21f0 mov rax, dr6
+0xb229 48894638 mov qword ptr [rsi + 0x38], rax
+0xb22d 0f21f8 mov rax, dr7
+0xb230 48894640 mov qword ptr [rsi + 0x40], rax
+0xb234 0f014648 sgdt [rsi + 0x48]
+0xb238 0f014e52 sidt [rsi + 0x52]
+0xb23c 660f00c8 str ax
+0xb240 6689465c mov word ptr [rsi + 0x5c], ax
+0xb244 4883c430 add rsp, 0x30
+0xb248 5f pop rdi
+0xb249 5e pop rsi
+0xb24a 5d pop rbp
+0xb24b c3 ret 

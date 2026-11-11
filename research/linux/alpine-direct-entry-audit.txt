@@ -1,0 +1,136 @@
+Linux bzImage protected entry file offset 0x4000; runtime load base1000000 inferred from VZ direct-boot log.
+Runtime block: LLDT AX at10000f5; adjacent LTR AX at10000fd and CR0.PG write at100010e.
+Static decode of initial32 and long64 heads; not proof of execution past LLDT.
+Mode32:
+0x1000000 fc cld 
+0x1000001 fa cli 
+0x1000002 8da6e8010000 lea esp, [esi + 0x1e8]
+0x1000008 e800000000 call 0x100000d
+0x100000d 5d pop ebp
+0x100000e 83ed0d sub ebp, 0xd
+0x1000011 8d851060b400 lea eax, [ebp + 0xb46010]
+0x1000017 894002 mov dword ptr [eax + 2], eax
+0x100001a 0f0110 lgdt [eax]
+0x100001d b818000000 mov eax, 0x18
+0x1000022 8ed8 mov ds, eax
+0x1000024 8ec0 mov es, eax
+0x1000026 8ee0 mov fs, eax
+0x1000028 8ee8 mov gs, eax
+0x100002a 8ed0 mov ss, eax
+0x100002c 8da500a4b400 lea esp, [ebp + 0xb4a400]
+0x1000032 6a08 push 8
+0x1000034 8d853c000000 lea eax, [ebp + 0x3c]
+0x100003a 50 push eax
+0x100003b cb retf 
+0x100003c e8ff7bb300 call 0x1b37c40
+0x1000041 85c0 test eax, eax
+0x1000043 0f85ee7bb300 jne 0x1b37c37
+0x1000049 89eb mov ebx, ebp
+0x100004b 8b8630020000 mov eax, dword ptr [esi + 0x230]
+0x1000051 48 dec eax
+0x1000052 01c3 add ebx, eax
+0x1000054 f7d0 not eax
+0x1000056 21c3 and ebx, eax
+0x1000058 81fb00000001 cmp ebx, 0x1000000
+0x100005e 7305 jae 0x1000065
+0x1000060 bb00000001 mov ebx, 0x1000000
+0x1000065 039e60020000 add ebx, dword ptr [esi + 0x260]
+0x100006b 81eb0010b800 sub ebx, 0xb81000
+0x1000071 0f20e0 mov eax, cr4
+0x1000074 83c820 or eax, 0x20
+0x1000077 0f22e0 mov cr4, eax
+0x100007a 31d2 xor edx, edx
+0x100007c 8dbb0000b600 lea edi, [ebx + 0xb60000]
+0x1000082 31c0 xor eax, eax
+0x1000084 b900180000 mov ecx, 0x1800
+0x1000089 f3ab rep stosd dword ptr es:[edi], eax
+0x100008b 8dbb0000b600 lea edi, [ebx + 0xb60000]
+0x1000091 8d8707100000 lea eax, [edi + 0x1007]
+0x1000097 8907 mov dword ptr [edi], eax
+0x1000099 015704 add dword ptr [edi + 4], edx
+0x100009c 8dbb0010b600 lea edi, [ebx + 0xb61000]
+0x10000a2 8d8707100000 lea eax, [edi + 0x1007]
+0x10000a8 b904000000 mov ecx, 4
+0x10000ad 8907 mov dword ptr [edi], eax
+0x10000af 015704 add dword ptr [edi + 4], edx
+0x10000b2 0500100000 add eax, 0x1000
+0x10000b7 83c708 add edi, 8
+0x10000ba 49 dec ecx
+0x10000bb 75f0 jne 0x10000ad
+0x10000bd 8dbb0020b600 lea edi, [ebx + 0xb62000]
+0x10000c3 b883010000 mov eax, 0x183
+0x10000c8 b900080000 mov ecx, 0x800
+0x10000cd 8907 mov dword ptr [edi], eax
+0x10000cf 015704 add dword ptr [edi + 4], edx
+0x10000d2 0500002000 add eax, 0x200000
+0x10000d7 83c708 add edi, 8
+0x10000da 49 dec ecx
+0x10000db 75f0 jne 0x10000cd
+0x10000dd 8d830000b600 lea eax, [ebx + 0xb60000]
+0x10000e3 0f22d8 mov cr3, eax
+0x10000e6 b9800000c0 mov ecx, 0xc0000080
+0x10000eb 0f32 rdmsr 
+0x10000ed 0fbae808 bts eax, 8
+0x10000f1 0f30 wrmsr 
+0x10000f3 31c0 xor eax, eax
+0x10000f5 0f00d0 lldt ax
+0x10000f8 b820000000 mov eax, 0x20
+0x10000fd 0f00d8 ltr ax
+0x1000100 8d8500020000 lea eax, [ebp + 0x200]
+0x1000106 6a10 push 0x10
+0x1000108 50 push eax
+0x1000109 b833000580 mov eax, 0x80050033
+0x100010e 0f22c0 mov cr0, eax
+0x1000111 cb retf 
+Mode64:
+0x1000200 fc cld 
+0x1000201 fa cli 
+0x1000202 31c0 xor eax, eax
+0x1000204 8ed8 mov ds, eax
+0x1000206 8ec0 mov es, eax
+0x1000208 8ed0 mov ss, eax
+0x100020a 8ee0 mov fs, eax
+0x100020c 8ee8 mov gs, eax
+0x100020e 488d2debfdffff lea rbp, [rip - 0x215]
+0x1000215 8b8630020000 mov eax, dword ptr [rsi + 0x230]
+0x100021b ffc8 dec eax
+0x100021d 4801c5 add rbp, rax
+0x1000220 48f7d0 not rax
+0x1000223 4821c5 and rbp, rax
+0x1000226 4881fd00000001 cmp rbp, 0x1000000
+0x100022d 7307 jae 0x1000236
+0x100022f 48c7c500000001 mov rbp, 0x1000000
+0x1000236 8b9e60020000 mov ebx, dword ptr [rsi + 0x260]
+0x100023c 81eb0010b800 sub ebx, 0xb81000
+0x1000242 4801eb add rbx, rbp
+0x1000245 488da300a4b400 lea rsp, [rbx + 0xb4a400]
+0x100024c 488d05ad5db400 lea rax, [rip + 0xb45dad]
+0x1000253 48014002 add qword ptr [rax + 2], rax
+0x1000257 0f0110 lgdt [rax]
+0x100025a 6a10 push 0x10
+0x100025c 488d0503000000 lea rax, [rip + 3]
+0x1000263 50 push rax
+0x1000264 48cb retfq 
+0x1000266 4989f7 mov r15, rsi
+0x1000269 e872d6b300 call 0x1b3d8e0
+0x100026e 0f20e0 mov rax, cr4
+0x1000271 2560100000 and eax, 0x1060
+0x1000276 0f22e0 mov cr4, rax
+0x1000279 4c89ff mov rdi, r15
+0x100027c 488db30000b800 lea rsi, [rbx + 0xb80000]
+0x1000283 e808d8b300 call 0x1b3da90
+0x1000288 6a00 push 0
+0x100028a 9d popfq 
+0x100028b 488d356661b400 lea rsi, [rip + 0xb46166]
+0x1000292 488dbbf863b400 lea rdi, [rbx + 0xb463f8]
+0x1000299 b90064b400 mov ecx, 0xb46400
+0x100029e c1e903 shr ecx, 3
+0x10002a1 fd std 
+0x10002a2 f348a5 rep movsq qword ptr [rdi], qword ptr [rsi]
+0x10002a5 fc cld 
+0x10002a6 488d830060b400 lea rax, [rbx + 0xb46000]
+0x10002ad 488d931060b400 lea rdx, [rbx + 0xb46010]
+0x10002b4 48895002 mov qword ptr [rax + 2], rdx
+0x10002b8 0f0110 lgdt [rax]
+0x10002bb 488d83007cb300 lea rax, [rbx + 0xb37c00]
+0x10002c2 ffe0 jmp rax

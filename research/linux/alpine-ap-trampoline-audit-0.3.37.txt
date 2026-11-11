@@ -1,0 +1,93 @@
+Actual Alpine 6.12.115 AP trampoline from decompressed ELF, static byte audit.
+ELF SHA256 13279833ca9b4de6786d32cedb89794af7745f68304622d74e72cd941e8d4942
+Relocations/data references are pre-relocation; no runtime reachability inferred.
+
+MODE 16 offset 0..70
+0000 fa                             cli 
+0001 0f09                           wbinvd 
+0003 ea08100000                     ljmp 0:0x1008
+0008 8cc8                           mov ax, cs
+000a 8ed8                           mov ds, ax
+000c 8ec0                           mov es, ax
+000e 8ed0                           mov ss, ax
+0010 66f00fba2e185000               lock bts dword ptr [0x5018], 0
+0018 7304                           jae 0x1e
+001a f390                           pause 
+001c ebf2                           jmp 0x10
+001e 66bc20600000                   mov esp, 0x6020
+0024 e82900                         call 0x50
+0027 6685c0                         test eax, eax
+002a 7520                           jne 0x4c
+002c 660f011e6000                   lidt [0x60]
+0032 660f01163000                   lgdt [0x30]
+0038 ba1800                         mov dx, 0x18
+003b 66b833000500                   mov eax, 0x50033
+0041 0f22c0                         mov cr0, eax
+0044 66ea002000000800               ljmp 8:0x2000
+004c f4                             hlt 
+004d ebfd                           jmp 0x4c
+004f 90                             nop 
+0050 9c                             pushf 
+0051 6a00                           push 0
+0053 9d                             popf 
+0054 669c                           pushfd 
+0056 6658                           pop eax
+0058 6689c3                         mov ebx, eax
+005b 663500002000                   xor eax, 0x200000
+0061 6650                           push eax
+0063 669d                           popfd 
+0065 669c                           pushfd 
+0067 6658                           pop eax
+0069 6639c3                         cmp ebx, eax
+006c 0f84fb00                       je 0x16b
+
+MODE 32 offset 1000..1090
+1000 8ed2                           mov ss, edx
+1002 81c400000000                   add esp, 0
+1008 8eda                           mov ds, edx
+100a 8ec2                           mov es, edx
+100c 8ee2                           mov fs, edx
+100e 8eea                           mov gs, edx
+1010 0fba251450000000               bt dword ptr [0x5014], 0
+1018 730f                           jae 0x1029
+101a b9100001c0                     mov ecx, 0xc0010010
+101f 0f32                           rdmsr 
+1021 0fbae817                       bts eax, 0x17
+1025 7202                           jb 0x1029
+1027 0f30                           wrmsr 
+1029 a110500000                     mov eax, dword ptr [0x5010]
+102e 0f22e0                         mov cr4, eax
+1031 b800400000                     mov eax, 0x4000
+1036 0f22d8                         mov cr3, eax
+1039 b9800000c0                     mov ecx, 0xc0000080
+103e 0f32                           rdmsr 
+1040 3b0508500000                   cmp eax, dword ptr [0x5008]
+1046 7508                           jne 0x1050
+1048 3b150c500000                   cmp edx, dword ptr [0x500c]
+104e 740d                           je 0x105d
+1050 a108500000                     mov eax, dword ptr [0x5008]
+1055 8b150c500000                   mov edx, dword ptr [0x500c]
+105b 0f30                           wrmsr 
+105d b833000580                     mov eax, 0x80050033
+1062 0f22c0                         mov cr0, eax
+1065 eaf02000001000                 ljmp 0x10:0x20f0
+106c 8d742600                       lea esi, [esi]
+1070 f00fba2d1850000000             lock bts dword ptr [0x5018], 0
+1079 7304                           jae 0x107f
+107b f390                           pause 
+107d ebf1                           jmp 0x1070
+107f bc20600000                     mov esp, 0x6020
+1084 66ba1800                       mov dx, 0x18
+1088 b833000500                     mov eax, 0x50033
+108d 0f22c0                         mov cr0, eax
+
+MODE 64 offset 10f0..1120 (far-jump target pre-relocation 20f0)
+10f0 ff250a2f0000                   jmp qword ptr [rip + 0x2f0a]
+10f6 2e488db42600000000             lea rsi, cs:[rsi + riz]
+10ff 90                             nop 
+1100 0f011d59dfffff                 lidt [rip - 0x20a7]
+1107 0f011542dfffff                 lgdt [rip - 0x20be]
+110e 0f20e0                         mov rax, cr4
+1111 3305f92e0000                   xor eax, dword ptr [rip + 0x2ef9]
+1117 a900100000                     test eax, 0x1000
+111c 753a                           jne 0x1158

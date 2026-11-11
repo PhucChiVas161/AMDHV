@@ -1,0 +1,93 @@
+0.3.30 CPU-init audit; exact Alpine bzImage SHA256 8ce908a8cb28d55adcacacf8a16609fa400e07a8826f0084ae5b13b8cb91b9ab
+
+
+/tmp/fixvm-alpine-vmlinux:	file format elf64-x86-64
+
+Disassembly of section .text:
+
+ffffffff81000000 <.text>:
+ffffffff81060f10: f3 0f 1e fa          	endbr64
+ffffffff81060f14: 31 f6                	xorl	%esi, %esi
+ffffffff81060f16: 0f 22 e7             	movq	%rdi, %cr4
+ffffffff81060f19: eb 1a                	jmp	0xffffffff81060f35 <.text+0x60f35>
+ffffffff81060f1b: 48 89 fa             	movq	%rdi, %rdx
+ffffffff81060f1e: 48 8b 05 fb bc 1f 01 	movq	0x11fbcfb(%rip), %rax   # 0xffffffff8225cc20
+ffffffff81060f25: 81 e2 00 08 b1 00    	andl	$0xb10800, %edx         # imm = 0xB10800
+ffffffff81060f2b: 48 39 c2             	cmpq	%rax, %rdx
+ffffffff81060f2e: 75 12                	jne	0xffffffff81060f42 <.text+0x60f42>
+ffffffff81060f30: 48 85 f6             	testq	%rsi, %rsi
+ffffffff81060f33: 75 1f                	jne	0xffffffff81060f54 <.text+0x60f54>
+ffffffff81060f35: 31 c0                	xorl	%eax, %eax
+ffffffff81060f37: 31 d2                	xorl	%edx, %edx
+ffffffff81060f39: 31 f6                	xorl	%esi, %esi
+ffffffff81060f3b: 31 ff                	xorl	%edi, %edi
+ffffffff81060f3d: e9 6e 8d b1 00       	jmp	0xffffffff81b79cb0 <.text+0xb79cb0>
+ffffffff81060f42: 48 89 d6             	movq	%rdx, %rsi
+ffffffff81060f45: 48 81 e7 ff f7 4e ff 	andq	$-0xb10801, %rdi        # imm = 0xFF4EF7FF
+ffffffff81060f4c: 48 31 c6             	xorq	%rax, %rsi
+ffffffff81060f4f: 48 09 c7             	orq	%rax, %rdi
+ffffffff81060f52: eb c2                	jmp	0xffffffff81060f16 <.text+0x60f16>
+ffffffff81060f54: 80 3d 3e 71 95 01 00 	cmpb	$0x0, 0x195713e(%rip)   # 0xffffffff829b8099
+ffffffff81060f5b: 75 d8                	jne	0xffffffff81060f35 <.text+0x60f35>
+ffffffff81060f5d: 48 c7 c7 40 43 1e 82 	movq	$-0x7de1bcc0, %rdi      # imm = 0x821E4340
+ffffffff81060f64: c6 05 2e 71 95 01 01 	movb	$0x1, 0x195712e(%rip)   # 0xffffffff829b8099
+
+
+/tmp/fixvm-alpine-vmlinux:	file format elf64-x86-64
+
+Disassembly of section .init.text:
+
+ffffffff82e21000 <.init.text>:
+ffffffff82e43fa0: 55                   	pushq	%rbp
+ffffffff82e43fa1: 31 f6                	xorl	%esi, %esi
+ffffffff82e43fa3: 48 c7 c7 c0 93 f6 82 	movq	$-0x7d096c40, %rdi      # imm = 0x82F693C0
+ffffffff82e43faa: 48 b8 20 2c e3 27 58 59 70 50	movabsq	$0x5070595827e32c20, %rax # imm = 0x5070595827E32C20
+ffffffff82e43fb4: 48 89 e5             	movq	%rsp, %rbp
+ffffffff82e43fb7: 53                   	pushq	%rbx
+ffffffff82e43fb8: 48 83 ec 10          	subq	$0x10, %rsp
+ffffffff82e43fbc: 65 48 8b 1c 25 28 00 00 00   	movq	%gs:0x28, %rbx
+ffffffff82e43fc5: 48 89 5d f0          	movq	%rbx, -0x10(%rbp)
+ffffffff82e43fc9: 48 8b 1d 40 ab ad ff 	movq	-0x5254c0(%rip), %rbx   # 0xffffffff8291eb10
+ffffffff82e43fd0: 89 75 ec             	movl	%esi, -0x14(%rbp)
+ffffffff82e43fd3: 48 31 eb             	xorq	%rbp, %rbx
+ffffffff82e43fd6: 48 31 c3             	xorq	%rax, %rbx
+ffffffff82e43fd9: e8 32 b8 29 fe       	callq	0xffffffff810df810 <.text+0xdf810>
+ffffffff82e43fde: 85 c0                	testl	%eax, %eax
+ffffffff82e43fe0: 74 02                	je	0xffffffff82e43fe4 <.init.text+0x22fe4>
+ffffffff82e43fe2: 0f 0b                	ud2
+ffffffff82e43fe4: 48 c1 c3 0d          	rolq	$0xd, %rbx
+ffffffff82e43fe8: 48 8d 7d ec          	leaq	-0x14(%rbp), %rdi
+ffffffff82e43fec: cc                   	int3
+ffffffff82e43fed: 90                   	nop
+ffffffff82e43fee: 90                   	nop
+ffffffff82e43fef: 90                   	nop
+ffffffff82e43ff0: 90                   	nop
+ffffffff82e43ff1: 83 7d ec 01          	cmpl	$0x1, -0x14(%rbp)
+ffffffff82e43ff5: 74 02                	je	0xffffffff82e43ff9 <.init.text+0x22ff9>
+ffffffff82e43ff7: 0f 0b                	ud2
+ffffffff82e43ff9: 48 c7 c7 c0 93 f6 82 	movq	$-0x7d096c40, %rdi      # imm = 0x82F693C0
+ffffffff82e44000: e8 6b b8 29 fe       	callq	0xffffffff810df870 <.text+0xdf870>
+ffffffff82e44005: 48 8b 05 04 ab ad ff 	movq	-0x5254fc(%rip), %rax   # 0xffffffff8291eb10
+ffffffff82e4400c: 48 ba 41 3b 3f c8 dd c9 cc 38	movabsq	$0x38ccc9ddc83f3b41, %rdx # imm = 0x38CCC9DDC83F3B41
+ffffffff82e44016: 48 01 d3             	addq	%rdx, %rbx
+ffffffff82e44019: 48 31 c3             	xorq	%rax, %rbx
+ffffffff82e4401c: 48 89 1d ed aa ad ff 	movq	%rbx, -0x525513(%rip)   # 0xffffffff8291eb10
+ffffffff82e44023: 48 8b 45 f0          	movq	-0x10(%rbp), %rax
+ffffffff82e44027: 65 48 2b 04 25 28 00 00 00   	subq	%gs:0x28, %rax
+ffffffff82e44030: 74 05                	je	0xffffffff82e44037 <.init.text+0x23037>
+ffffffff82e44032: e8 49 54 d2 fe       	callq	0xffffffff81b69480 <.text+0xb69480>
+ffffffff82e44037: 58                   	popq	%rax
+ffffffff82e44038: 5a                   	popq	%rdx
+ffffffff82e44039: 5b                   	popq	%rbx
+ffffffff82e4403a: 5d                   	popq	%rbp
+ffffffff82e4403b: 31 c0                	xorl	%eax, %eax
+ffffffff82e4403d: 31 d2                	xorl	%edx, %edx
+ffffffff82e4403f: 31 f6                	xorl	%esi, %esi
+ffffffff82e44041: 31 ff                	xorl	%edi, %edi
+
+
+Source comparison (v6.12; binary is Alpine6.12.115, symbols inferred from matching control flow, not a matching debug vmlinux).
+https://raw.githubusercontent.com/torvalds/linux/v6.12/arch/x86/kernel/alternative.c
+INT3 / four NOPs / val!=1 BUG matches int3_selftest(), not evidence of guest kernel panic.
+
+Firmware:70 PE modules, identical hashes to previous inventory; expanded category native-cr4-features decoded no sites. Linear decode, not reachability proof; TE/raw excluded.

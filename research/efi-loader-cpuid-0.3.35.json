@@ -1,0 +1,77 @@
+[
+  {
+    "file": "grubx64.pe",
+    "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+    "rva": "0x10cee",
+    "preceding": [
+      "10cdd: 90 nop ",
+      "10cde: c9 leave ",
+      "10cdf: c3 ret ",
+      "10ce0: 55 push rbp",
+      "10ce1: 4889e5 mov rbp, rsp",
+      "10ce4: 53 push rbx",
+      "10ce5: 4883ec20 sub rsp, 0x20",
+      "10ce9: b800000000 mov eax, 0"
+    ]
+  },
+  {
+    "file": "grubx64.pe",
+    "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+    "rva": "0x10de2",
+    "preceding": [
+      "10dcf: 0fb6c0 movzx eax, al",
+      "10dd2: c9 leave ",
+      "10dd3: c3 ret ",
+      "10dd4: 55 push rbp",
+      "10dd5: 4889e5 mov rbp, rsp",
+      "10dd8: 53 push rbx",
+      "10dd9: 4883ec20 sub rsp, 0x20",
+      "10ddd: b800000000 mov eax, 0"
+    ]
+  },
+  {
+    "file": "grubx64.pe",
+    "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+    "rva": "0x10e35",
+    "preceding": [
+      "10e15: 4883ec10 sub rsp, 0x10",
+      "10e19: 48b8a90d010000000000 movabs rax, 0x10da9",
+      "10e23: ffd0 call rax",
+      "10e25: 85c0 test eax, eax",
+      "10e27: 7507 jne 0x10e30",
+      "10e29: b800000000 mov eax, 0",
+      "10e2e: eb24 jmp 0x10e54",
+      "10e30: b801000000 mov eax, 1"
+    ]
+  },
+  {
+    "file": "grubx64.pe",
+    "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+    "rva": "0x10f9b",
+    "preceding": [
+      "10f89: ffd0 call rax",
+      "10f8b: 5d pop rbp",
+      "10f8c: c3 ret ",
+      "10f8d: 55 push rbp",
+      "10f8e: 4889e5 mov rbp, rsp",
+      "10f91: 53 push rbx",
+      "10f92: 4883ec20 sub rsp, 0x20",
+      "10f96: b800000000 mov eax, 0"
+    ]
+  },
+  {
+    "file": "grubx64.pe",
+    "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+    "rva": "0x111d2",
+    "preceding": [
+      "111bd: b801000000 mov eax, 1",
+      "111c2: c9 leave ",
+      "111c3: c3 ret ",
+      "111c4: 55 push rbp",
+      "111c5: 4889e5 mov rbp, rsp",
+      "111c8: 53 push rbx",
+      "111c9: 4883ec20 sub rsp, 0x20",
+      "111cd: b800000000 mov eax, 0"
+    ]
+  }
+]

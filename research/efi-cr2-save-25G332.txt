@@ -1,0 +1,69 @@
+Static inference, not runtime memory capture or boot proof.
+PE GUID 1a1e4886-9517-440e-9fde-3be44cee2136 SHA256 3a2eefa780dfb6f7e7ba46ee59601b7050f149521a6e1e13aa9c90eb96300694
+Observed RIP1fa5942d matches MOV RAX,CR2 at RVA142d, inferred module base1fa58000.
+IRQ dispatcher prologue saves CR8/CR4/CR3/CR2/CR0 and debug state; epilogue restores CR2 too.
+0x1417 440f20c0 mov rax, cr8
+0x141b 50 push rax
+0x141c 0f20e0 mov rax, cr4
+0x141f 480d08020000 or rax, 0x208
+0x1425 0f22e0 mov cr4, rax
+0x1428 50 push rax
+0x1429 0f20d8 mov rax, cr3
+0x142c 50 push rax
+0x142d 0f20d0 mov rax, cr2
+0x1430 50 push rax
+0x1431 4831c0 xor rax, rax
+0x1434 50 push rax
+0x1435 0f20c0 mov rax, cr0
+0x1438 50 push rax
+0x1439 48837d081d cmp qword ptr [rbp + 8], 0x1d
+0x143e 0f841d000000 je 0x1461
+0x1444 0f21f8 mov rax, dr7
+0x1447 50 push rax
+0x1448 0f21f0 mov rax, dr6
+0x144b 50 push rax
+0x144c 0f21d8 mov rax, dr3
+0x144f 50 push rax
+0x1450 0f21d0 mov rax, dr2
+0x1453 50 push rax
+0x1454 0f21c8 mov rax, dr1
+0x1457 50 push rax
+0x1458 0f21c0 mov rax, dr0
+0x145b 50 push rax
+0x145c e909000000 jmp 0x146a
+0x1461 4831c0 xor rax, rax
+0x1464 50 push rax
+0x1465 50 push rax
+0x1466 50 push rax
+0x1467 50 push rax
+0x1468 50 push rax
+0x1469 50 push rax
+0x146a 4881ec00020000 sub rsp, 0x200
+0x1471 4889e7 mov rdi, rsp
+0x1474 0fae07 fxsave [rdi]
+0x1477 fc cld 
+0x1478 ff7510 push qword ptr [rbp + 0x10]
+0x147b 488b4d08 mov rcx, qword ptr [rbp + 8]
+0x147f 4889e2 mov rdx, rsp
+0x1482 488b4518 mov rax, qword ptr [rbp + 0x18]
+0x1486 48894508 mov qword ptr [rbp + 8], rax
+0x148a 4883ec28 sub rsp, 0x28
+0x148e e8618d0000 call 0xa1f4
+0x1493 4883c428 add rsp, 0x28
+0x1497 fa cli 
+0x1498 4883c408 add rsp, 8
+0x149c 4889e6 mov rsi, rsp
+0x149f 0fae0e fxrstor [rsi]
+0x14a2 4881c400020000 add rsp, 0x200
+0x14a9 4883c430 add rsp, 0x30
+0x14ad 58 pop rax
+0x14ae 0f22c0 mov cr0, rax
+0x14b1 4883c408 add rsp, 8
+0x14b5 58 pop rax
+0x14b6 0f22d0 mov cr2, rax
+0x14b9 58 pop rax
+0x14ba 0f22d8 mov cr3, rax
+0x14bd 58 pop rax
+0x14be 0f22e0 mov cr4, rax
+0x14c1 58 pop rax
+0x14c2 440f22c0 mov cr8, rax

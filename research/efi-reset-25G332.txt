@@ -1,0 +1,182 @@
+Source: /System/Library/Frameworks/Virtualization.framework/Versions/A/Resources/VZG11.fd
+SHA256: 3b6ecc2b38e3004423bb260eb15322a970e70da26c11b17f0d64a290983f3903
+
+Block offset=ffff0 mode=16
+fffffff0 90                       nop 
+fffffff1 90                       nop 
+fffffff2 ebb4                     jmp 0xffffffa8
+fffffff4 90                       nop 
+fffffff5 90                       nop 
+fffffff6 90                       nop 
+fffffff7 90                       nop 
+fffffff8 90                       nop 
+fffffff9 90                       nop 
+fffffffa 90                       nop 
+fffffffb 90                       nop 
+fffffffc 90                       nop 
+fffffffd 90                       nop 
+fffffffe 90                       nop 
+ffffffff 90                       nop 
+
+Block offset=fffa8 mode=16
+ffffffa8 bf4250                   mov di, 0x5042
+ffffffab eb0a                     jmp 0xffffffb7
+ffffffad bf4150                   mov di, 0x5041
+ffffffb0 eb05                     jmp 0xffffffb7
+ffffffb2 6689c4                   mov esp, eax
+ffffffb5 eb02                     jmp 0xffffffb9
+ffffffb7 ebf9                     jmp 0xffffffb2
+ffffffb9 eb88                     jmp 0xffffff43
+
+Block offset=fff43 mode=16
+ffffff43 fa                       cli 
+ffffff44 bb00f0                   mov bx, 0xf000
+ffffff47 8edb                     mov ds, bx
+ffffff49 bb7aff                   mov bx, 0xff7a
+ffffff4c 2e660f0117               lgdt cs:[bx]
+ffffff51 66b823000040             mov eax, 0x40000023
+ffffff57 0f22c0                   mov cr0, eax
+ffffff5a 66ea62ffffff1000         ljmp 0x10:0xffffff62
+
+Block offset=fff62 mode=32
+ffffff62 b840060000               mov eax, 0x640
+ffffff67 0f22e0                   mov cr4, eax
+ffffff6a 66b80800                 mov ax, 8
+ffffff6e 8ed8                     mov ds, eax
+ffffff70 8ec0                     mov es, eax
+ffffff72 8ee0                     mov fs, eax
+ffffff74 8ee8                     mov gs, eax
+ffffff76 8ed0                     mov ss, eax
+ffffff78 eb41                     jmp 0xffffffbb
+
+Block offset=fffbb mode=32
+ffffffbb e970fdffff               jmp 0xfffffd30
+ffffffc0 e9bcfdffff               jmp 0xfffffd81
+ffffffc5 e97cfeffff               jmp 0xfffffe46
+
+Block offset=ffd30 mode=32
+fffffd30 31c0                     xor eax, eax
+fffffd32 2d00100000               sub eax, 0x1000
+fffffd37 3d000000ff               cmp eax, 0xff000000
+fffffd3c 7233                     jb 0xfffffd71
+fffffd3e 81781078e58c8c           cmp dword ptr [eax + 0x10], 0x8c8ce578
+fffffd45 75eb                     jne 0xfffffd32
+fffffd47 8178143d8a1c4f           cmp dword ptr [eax + 0x14], 0x4f1c8a3d
+fffffd4e 75e2                     jne 0xfffffd32
+fffffd50 81781899358961           cmp dword ptr [eax + 0x18], 0x61893599
+fffffd57 75d9                     jne 0xfffffd32
+fffffd59 81781c85c32dd3           cmp dword ptr [eax + 0x1c], 0xd32dc385
+fffffd60 75d0                     jne 0xfffffd32
+fffffd62 83782400                 cmp dword ptr [eax + 0x24], 0
+fffffd66 75ca                     jne 0xfffffd32
+fffffd68 89c3                     mov ebx, eax
+fffffd6a 035820                   add ebx, dword ptr [eax + 0x20]
+fffffd6d 75c3                     jne 0xfffffd32
+fffffd6f eb09                     jmp 0xfffffd7a
+fffffd71 b8bfbfbfbf               mov eax, 0xbfbfbfbf
+fffffd76 89c5                     mov ebp, eax
+fffffd78 ebfe                     jmp 0xfffffd78
+fffffd7a 89c5                     mov ebp, eax
+fffffd7c e93f020000               jmp 0xffffffc0
+fffffd81 31db                     xor ebx, ebx
+fffffd83 89de                     mov esi, ebx
+fffffd85 89e8                     mov eax, ebp
+fffffd87 668b5d30                 mov bx, word ptr [ebp + 0x30]
+fffffd8b 01d8                     add eax, ebx
+fffffd8d 723b                     jb 0xfffffdca
+fffffd8f eb03                     jmp 0xfffffd94
+fffffd91 40                       inc eax
+fffffd92 7236                     jb 0xfffffdca
+fffffd94 85c0                     test eax, eax
+fffffd96 7432                     je 0xfffffdca
+fffffd98 83c007                   add eax, 7
+fffffd9b 722d                     jb 0xfffffdca
+fffffd9d 24f8                     and al, 0xf8
+fffffd9f 8a5817                   mov bl, byte ptr [eax + 0x17]
+fffffda2 f6c320                   test bl, 0x20
+fffffda5 74ea                     je 0xfffffd91
+fffffda7 8b4814                   mov ecx, dword ptr [eax + 0x14]
+fffffdaa 81e1ffffff00             and ecx, 0xffffff
+fffffdb0 09c9                     or ecx, ecx
+fffffdb2 74dd                     je 0xfffffd91
+fffffdb4 01c1                     add ecx, eax
+fffffdb6 7402                     je 0xfffffdba
+fffffdb8 72d7                     jb 0xfffffd91
+fffffdba 80781203                 cmp byte ptr [eax + 0x12], 3
+fffffdbe 7506                     jne 0xfffffdc6
+fffffdc0 eb17                     jmp 0xfffffdd9
+fffffdc2 85c0                     test eax, eax
+fffffdc4 7506                     jne 0xfffffdcc
+fffffdc6 89c8                     mov eax, ecx
+fffffdc8 ebca                     jmp 0xfffffd94
+fffffdca 31c0                     xor eax, eax
+fffffdcc 89c6                     mov esi, eax
+fffffdce 85f6                     test esi, esi
+fffffdd0 7502                     jne 0xfffffdd4
+fffffdd2 74fe                     je 0xfffffdd2
+fffffdd4 e9ec010000               jmp 0xffffffc5
+
+Block offset=ffe48 mode=32
+fffffe48 0f20e0                   mov eax, cr4
+fffffe4b 0fbae805                 bts eax, 5
+fffffe4f 0f22e0                   mov cr4, eax
+fffffe52 b9800000c0               mov ecx, 0xc0000080
+fffffe57 0f32                     rdmsr 
+fffffe59 0fbae808                 bts eax, 8
+fffffe5d 0f30                     wrmsr 
+fffffe5f 0f20c0                   mov eax, cr0
+fffffe62 0fbae81f                 bts eax, 0x1f
+fffffe66 0f22c0                   mov cr0, eax
+fffffe69 ea70feffff1800           ljmp 0x18:0xfffffe70
+fffffe70 e955010000               jmp 0xffffffca
+
+Block offset=ffe75 mode=32
+fffffe75 b800000080               mov eax, 0x80000000
+fffffe7a 0fa2                     cpuid 
+fffffe7c 3d1f000080               cmp eax, 0x8000001f
+fffffe81 7c21                     jl 0xfffffea4
+fffffe83 b81f000080               mov eax, 0x8000001f
+fffffe88 0fa2                     cpuid 
+fffffe8a 0fbae001                 bt eax, 1
+fffffe8e 7314                     jae 0xfffffea4
+fffffe90 b9310101c0               mov ecx, 0xc0010131
+fffffe95 0f32                     rdmsr 
+fffffe97 0fbae000                 bt eax, 0
+fffffe9b 7307                     jae 0xfffffea4
+fffffe9d 89d8                     mov eax, ebx
+fffffe9f 83e03f                   and eax, 0x3f
+fffffea2 eb02                     jmp 0xfffffea6
+fffffea4 31c0                     xor eax, eax
+fffffea6 eb02                     jmp 0xfffffeaa
+
+Block offset=ffeaa mode=32
+fffffeaa 31d2                     xor edx, edx
+fffffeac 85c0                     test eax, eax
+fffffeae 7406                     je 0xfffffeb6
+fffffeb0 83e820                   sub eax, 0x20
+fffffeb3 0fabc2                   bts edx, eax
+fffffeb6 b900180000               mov ecx, 0x1800
+fffffebb 31c0                     xor eax, eax
+fffffebd 89048dfcff7f00           mov dword ptr [ecx*4 + 0x7ffffc], eax
+fffffec4 e2f7                     loop 0xfffffebd
+fffffec6 c7050000800023108000     mov dword ptr [0x800000], 0x801023
+fffffed0 891504008000             mov dword ptr [0x800004], edx
+fffffed6 c7050010800023208000     mov dword ptr [0x801000], 0x802023
+fffffee0 891504108000             mov dword ptr [0x801004], edx
+fffffee6 c7050810800023308000     mov dword ptr [0x801008], 0x803023
+fffffef0 89150c108000             mov dword ptr [0x80100c], edx
+fffffef6 c7051010800023408000     mov dword ptr [0x801010], 0x804023
+ffffff00 891514108000             mov dword ptr [0x801014], edx
+ffffff06 c7051810800023508000     mov dword ptr [0x801018], 0x805023
+ffffff10 89151c108000             mov dword ptr [0x80101c], edx
+ffffff16 b900080000               mov ecx, 0x800
+ffffff1b 89c8                     mov eax, ecx
+ffffff1d 48                       dec eax
+ffffff1e c1e015                   shl eax, 0x15
+ffffff21 05e3000000               add eax, 0xe3
+ffffff26 8904cdf81f8000           mov dword ptr [ecx*8 + 0x801ff8], eax
+ffffff2d 8914cdfc1f8000           mov dword ptr [ecx*8 + 0x801ffc], edx
+ffffff34 e2e5                     loop 0xffffff1b
+ffffff36 b800008000               mov eax, 0x800000
+ffffff3b 0f22d8                   mov cr3, eax
+ffffff3e e905ffffff               jmp 0xfffffe48

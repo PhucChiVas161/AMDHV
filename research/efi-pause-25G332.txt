@@ -1,0 +1,41 @@
+ROM SHA256: 3b6ecc2b38e3004423bb260eb15322a970e70da26c11b17f0d64a290983f3903
+Module GUID c8339973-a563-4561-b858-d8476f9defc4 SHA256: c372b9276549153ca3f245047c27cf2ec12ff62bcc9a0e502beb2a575d5be5d2
+Static inference only; not a runtime memory dump.
+Inferred base 1fb3f000: PUSHF RVA11ad matches RIP1fb401ad; PAUSE RVA11d8 matches RIP1fb401d8.
+PAUSE loop polls port input then restores prior IF via CLI/STI. Guest IF initially0.
+RVA 11ad 9c                       pushfq 
+RVA 11ae 4159                     pop r9
+RVA 11b0 fa                       cli 
+RVA 11b1 0fb74efc                 movzx ecx, word ptr [rsi - 4]
+RVA 11b5 83e1fe                   and ecx, 0xfffffffe
+RVA 11b8 83c108                   add ecx, 8
+RVA 11bb 89ca                     mov edx, ecx
+RVA 11bd ed                       in eax, dx
+RVA 11be 4189c0                   mov r8d, eax
+RVA 11c1 4181c06b010000           add r8d, 0x16b
+RVA 11c8 0f31                     rdtsc 
+RVA 11ca 89ca                     mov edx, ecx
+RVA 11cc ed                       in eax, dx
+RVA 11cd 4489c2                   mov edx, r8d
+RVA 11d0 29c2                     sub edx, eax
+RVA 11d2 0fbae217                 bt edx, 0x17
+RVA 11d6 7204                     jb 0x11dc
+RVA 11d8 f390                     pause 
+RVA 11da ebee                     jmp 0x11ca
+RVA 11dc 0f31                     rdtsc 
+RVA 11de 410fbae109               bt r9d, 9
+RVA 11e3 7203                     jb 0x11e8
+RVA 11e5 fa                       cli 
+RVA 11e6 eb01                     jmp 0x11e9
+RVA 11e8 fb                       sti 
+RVA 11e9 488b05700e0000           mov rax, qword ptr [rip + 0xe70]
+RVA 11f0 4c8b9848010000           mov r11, qword ptr [rax + 0x148]
+RVA 11f7 488d0d320e0000           lea rcx, [rip + 0xe32]
+RVA 11fe 488d150b0e0000           lea rdx, [rip + 0xe0b]
+RVA 1205 4c8d05f40d0000           lea r8, [rip + 0xdf4]
+RVA 120c 4531c9                   xor r9d, r9d
+RVA 120f e84c000000               call 0x1260
+RVA 1214 4883c428                 add rsp, 0x28
+RVA 1218 5e                       pop rsi
+RVA 1219 5d                       pop rbp
+RVA 121a c3                       ret 

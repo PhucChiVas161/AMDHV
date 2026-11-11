@@ -1,0 +1,217 @@
+{
+  "scope": "Static executable-section linear decode; includes possible embedded data. No reachability or runtime proof; TE/raw modules excluded.",
+  "module_count": 2,
+  "totals": {
+    "event-flags-halt": 4,
+    "port-io": 10,
+    "msr-clock-cpuid-xcr": 9
+  },
+  "modules": [
+    {
+      "path": "BOOTX64.pe",
+      "name": "",
+      "sha256": "571ea56b855dcf73bec6acb63c5ded44c2a191138bca0d8cfa5aa93f60f46fff",
+      "counts": {
+        "event-flags-halt": 1
+      },
+      "sites": [
+        {
+          "rva": "0x25134",
+          "section": ".text",
+          "bits": 64,
+          "category": "event-flags-halt",
+          "bytes": "f390",
+          "instruction": "pause"
+        }
+      ]
+    },
+    {
+      "path": "grubx64.pe",
+      "name": "",
+      "sha256": "db283a408682e92dabec2c2098576c2a6e374e714320124a0161136c5b326095",
+      "counts": {
+        "port-io": 10,
+        "msr-clock-cpuid-xcr": 9,
+        "event-flags-halt": 3
+      },
+      "sites": [
+        {
+          "rva": "0x1029",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ec",
+          "instruction": "in al, dx"
+        },
+        {
+          "rva": "0x1045",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ed",
+          "instruction": "in eax, dx"
+        },
+        {
+          "rva": "0x1064",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ef",
+          "instruction": "out dx, eax"
+        },
+        {
+          "rva": "0xc2b8",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "66ed",
+          "instruction": "in ax, dx"
+        },
+        {
+          "rva": "0xc2d6",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ed",
+          "instruction": "in eax, dx"
+        },
+        {
+          "rva": "0xc2f7",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "66ef",
+          "instruction": "out dx, ax"
+        },
+        {
+          "rva": "0xc312",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ef",
+          "instruction": "out dx, eax"
+        },
+        {
+          "rva": "0x10cee",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0fa2",
+          "instruction": "cpuid"
+        },
+        {
+          "rva": "0x10cfe",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0f31",
+          "instruction": "rdtsc"
+        },
+        {
+          "rva": "0x10db1",
+          "section": ".text",
+          "bits": 64,
+          "category": "event-flags-halt",
+          "bytes": "9c",
+          "instruction": "pushfq"
+        },
+        {
+          "rva": "0x10dbd",
+          "section": ".text",
+          "bits": 64,
+          "category": "event-flags-halt",
+          "bytes": "9d",
+          "instruction": "popfq"
+        },
+        {
+          "rva": "0x10dbe",
+          "section": ".text",
+          "bits": 64,
+          "category": "event-flags-halt",
+          "bytes": "9c",
+          "instruction": "pushfq"
+        },
+        {
+          "rva": "0x10de2",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0fa2",
+          "instruction": "cpuid"
+        },
+        {
+          "rva": "0x10df2",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0f31",
+          "instruction": "rdtsc"
+        },
+        {
+          "rva": "0x10e35",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0fa2",
+          "instruction": "cpuid"
+        },
+        {
+          "rva": "0x10f9b",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0fa2",
+          "instruction": "cpuid"
+        },
+        {
+          "rva": "0x10fab",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0f31",
+          "instruction": "rdtsc"
+        },
+        {
+          "rva": "0x10fdb",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ec",
+          "instruction": "in al, dx"
+        },
+        {
+          "rva": "0x10ffd",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ee",
+          "instruction": "out dx, al"
+        },
+        {
+          "rva": "0x111d2",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0fa2",
+          "instruction": "cpuid"
+        },
+        {
+          "rva": "0x111e2",
+          "section": ".text",
+          "bits": 64,
+          "category": "msr-clock-cpuid-xcr",
+          "bytes": "0f31",
+          "instruction": "rdtsc"
+        },
+        {
+          "rva": "0x11212",
+          "section": ".text",
+          "bits": 64,
+          "category": "port-io",
+          "bytes": "ed",
+          "instruction": "in eax, dx"
+        }
+      ]
+    }
+  ]
+}

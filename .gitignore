@@ -1,0 +1,77 @@
+# macOS and editor-local files
+.DS_Store
+._*
+.AppleDouble/
+.LSOverride
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Generated builds; keep AMDHV source and probe/test sources
+/build/
+*.o
+*.dSYM/
+*.kext/
+
+# Python environments and caches
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local secrets and credentials
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+id_rsa
+id_ed25519
+known_hosts
+
+# Local compose contains a database password; keep it on this machine
+/docker-compose.yml
+/docker-compose.override.yml
+/compose.override.yaml
+
+# VM data, installers and firmware binaries
+*.raw
+*.qcow2
+*.vmdk
+*.vdi
+*.img
+*.iso
+*.dmg
+*.efi
+*.EFI
+*.fd
+*.sock
+*.pid
+*.lock
+*.lck
+
+# Machine profiles/backups contain SSH identities and provisioning data
+/research/backups/
+/research/kext-backups/
+/research/disposable/podman-profile/
+/research/disposable/podman-efi-vars
+/research/disposable/efi-loader-audit/
+
+# Downloaded assets, third-party reference copies and local run outputs
+/research/assets/
+/research/external/
+/research/runs/
+/research/disposable/source-*/
+/research/disposable/docker-settings-*.json
+/research/linux/*-sysinfo.txt
+
+# Generated disassembly from local Apple binaries
+/research/*.s

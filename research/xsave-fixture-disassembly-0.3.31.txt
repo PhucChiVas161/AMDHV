@@ -1,0 +1,81 @@
+
+Fixture source line 52 guest RIP reset to8000
+0x8000 b820060400 mov eax, 0x40620
+0x8005 0f22e0 mov cr4, rax
+0x8008 31c9 xor ecx, ecx
+0x800a 31d2 xor edx, edx
+0x800c b807000000 mov eax, 7
+0x8011 0f01d1 xsetbv 
+0x8014 0f01d0 xgetbv 
+0x8017 c4410574ff vpcmpeqb ymm15, ymm15, ymm15
+0x801c 0fa2 cpuid 
+0x801e f4 hlt 
+
+Fixture source line 60 guest RIP reset to8000
+0x8000 bf00900000 mov edi, 0x9000
+0x8005 c57e7f3f vmovdqu ymmword ptr [rdi], ymm15
+0x8009 f4 hlt 
+
+Fixture source line 64 guest RIP reset to8000
+0x8000 bf40900000 mov edi, 0x9040
+0x8005 b807000000 mov eax, 7
+0x800a 31d2 xor edx, edx
+0x800c 480fae27 xsave64 ptr [rdi]
+0x8010 c44105efff vpxor ymm15, ymm15, ymm15
+0x8015 b807000000 mov eax, 7
+0x801a 480fae2f xrstor64 ptr [rdi]
+0x801e bf00900000 mov edi, 0x9000
+0x8023 c57e7f3f vmovdqu ymmword ptr [rdi], ymm15
+0x8027 f4 hlt 
+
+Fixture source line 72 guest RIP reset to8000
+0x8000 bf40900000 mov edi, 0x9040
+0x8005 b807000000 mov eax, 7
+0x800a 31d2 xor edx, edx
+0x800c 480fc72f xsaves64 ptr [rdi]
+0x8010 c44105efff vpxor ymm15, ymm15, ymm15
+0x8015 b807000000 mov eax, 7
+0x801a 480fc71f xrstors64 ptr [rdi]
+0x801e bf00900000 mov edi, 0x9000
+0x8023 c57e7f3f vmovdqu ymmword ptr [rdi], ymm15
+0x8027 f4 hlt 
+
+Fixture source line 79 guest RIP reset to8000
+0x8000 31c9 xor ecx, ecx
+0x8002 31d2 xor edx, edx
+0x8004 b801000000 mov eax, 1
+0x8009 0f01d1 xsetbv 
+0x800c 0f01d0 xgetbv 
+0x800f 0fa2 cpuid 
+0x8011 f4 hlt 
+
+Fixture source line 82 guest RIP reset to8000
+0x8000 31c9 xor ecx, ecx
+0x8002 31d2 xor edx, edx
+0x8004 b807000000 mov eax, 7
+0x8009 0f01d1 xsetbv 
+0x800c bf00900000 mov edi, 0x9000
+0x8011 c57e7f3f vmovdqu ymmword ptr [rdi], ymm15
+0x8015 f4 hlt 
+
+Fixture source line 87 guest RIP reset to8000
+0x8000 f4 hlt 
+
+Fixture source line 91 guest RIP reset to8000
+0x8000 31c9 xor ecx, ecx
+0x8002 31d2 xor edx, edx
+0x8004 b805000000 mov eax, 5
+0x8009 0f01d1 xsetbv 
+0x800c f4 hlt 
+
+Fixture source line 93 guest RIP reset to8000
+0x8000 b901000000 mov ecx, 1
+0x8005 31d2 xor edx, edx
+0x8007 b807000000 mov eax, 7
+0x800c 0f01d1 xsetbv 
+0x800f f4 hlt 
+
+Fixture source line 97 guest RIP reset to8000
+0x8000 bf00900000 mov edi, 0x9000
+0x8005 c57e7f3f vmovdqu ymmword ptr [rdi], ymm15
+0x8009 f4 hlt 
